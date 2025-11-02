@@ -142,3 +142,43 @@ article h2 {
   height: 100%;
   border-radius: 8px;
 }
+
+#skillcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skillcontainer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skillcontainer .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skillcontainer .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skillcontainer .barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+}
+
+#skillcontainer .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #skillcontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
